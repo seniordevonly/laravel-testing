@@ -18,7 +18,7 @@
                 </h2>
                 <ul class="mt-8 space-y-2">
                     @foreach ($posts as $post)
-                        <li>
+                        <li data-post>
                             <a href="{{ action([\App\Http\Controllers\PostsController::class, 'show'], $post->slug) }}"
                                 class="toc-entry">
                                 <h3 class="toc-chapter font-display text-xl font-medium">{{ $post->title }}</h3>
